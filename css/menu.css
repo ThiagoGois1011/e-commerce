@@ -1,0 +1,64 @@
+body{
+	font-family: 'Raleway';
+	font-style: normal;
+
+}
+.menu{
+	display: flex;
+	padding: 37px 152px;
+	align-items: center;
+	width: 100vw;
+	box-sizing: border-box;
+}
+
+.menu__div-busca{
+	display: flex;
+	margin-left: 32px;
+	align-items: center;
+	padding: 8px;
+	background: #F5F5F5;
+	border-radius: 20px;
+	width: 393px;
+	height: 40px;
+	box-sizing: border-box;
+}
+
+.menu__pesquisa{
+	float:left;
+	flex-grow: 1;
+	background-color:transparent;
+  	padding-left:5px;
+  	border:none;
+  	outline: 0;
+  	height: 100%;
+
+  	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.menu__span{
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.menu__botao-login{
+	padding: 16px;
+	width: 182px;
+	height: 51px;
+	border: 1px solid #2A7AE4;
+	background: transparent;
+
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #2A7AE4;
+
+}

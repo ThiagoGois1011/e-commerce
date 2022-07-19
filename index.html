@@ -4,13 +4,26 @@
 		<meta charset="UTF-8">
 		<title>Alura geek</title>
 		<meta name="viewport" content="windth=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href=".\css\reset.css">
+		<link rel="stylesheet" href=".\css\menu.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		<header>
 			<section class="menu">
-				<img class="menu__logo" src="logo.png" alt="logo da Alura geek">
-				<input class="menu__pesquisa" type="search">	
+				<img class="menu__logo" src=".\assets\logo.png" alt="logo da Alura geek">
+				<div class="menu__div-busca">
+					<input class="menu__pesquisa" id="pesquisa" type="text" placeholder="o que deseja encontrar?">
+					<label for="pesquisa"></label>
+					<img class="menu__lupa" src=".\assets\busca.png" alt="lupa">
+				</div>
+				<span class="menu__span">
+					<a href="#"><button class="menu__botao-login" id="botaoLogin">Login</button></a>
+				</span>
 			</section>
 			
 		</header>
