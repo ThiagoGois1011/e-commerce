@@ -1,0 +1,43 @@
+.banner{
+	display: flex;
+	width: 100vw;
+	height: 352px;
+	padding: 0 152px;
+	justify-content: flex-start;
+	align-items: flex-end;
+	background: url(../assets/banner-image.png) no-repeat center;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.banner__h1{
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 61px;
+
+	color: #FFFFFF;
+}
+
+.banner__paragrafo{
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	margin-top: 16px;
+
+	color: #FFFFFF;
+}
+
+.banner__button{
+	padding: 18px;
+	background: #2A7AE4;
+	margin-top: 16px;
+	margin-bottom: 32px;
+	box-sizing: border-box;
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+}
