@@ -1,0 +1,160 @@
+.starwars{
+	padding: 0 152px;
+	margin-top: 64px;
+	box-sizing: border-box;
+}
+
+.starwars a:hover{
+	color: #1260c7;
+	text-decoration: underline;
+}
+
+.starwars__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.starwars__head h1{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #464646;
+}
+
+.starwars__head a{
+	font-weight: 700;
+	height: 100%;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+.starwars__head a:after{
+	position: absolute;
+	content: url(../assets/vector.png);
+	margin-left: 12px;
+}
+
+.starwars__content{
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.starwars__box{
+	display: flex;
+	flex-direction: column;	
+}
+
+.starwars__box img{
+	width: 12vw;
+	max-width: 200px;
+}
+
+.starwars__box li:nth-child(2){
+	font-weight: 500;
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+}
+
+.starwars__box li:nth-child(3){
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 8px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.starwars__box li:nth-child(4){
+	margin-top: 8px;
+}
+
+.starwars__box a{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+	.starwars{
+		padding: 0 32px;
+		margin-top: 32px;
+	}
+
+	.starwars__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.starwars__head a{
+		padding: 0 29px;
+	}
+
+	.starwars__head a:after{
+		margin-left: 12px;
+	}
+
+	.starwars__content{
+		flex-wrap: wrap;
+	}
+
+	.starwars__box img {
+		width: 164px;
+		height: 174px;
+	}
+
+	.starwars__box:nth-last-child(1){
+		display: none;
+	}
+
+	.starwars__box:nth-last-child(2){
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 425px){
+
+	.starwars{
+		padding: 0 16px;
+		margin-top: 16px;
+	}
+
+	.starwars__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.starwars__head a{
+		font-size: 14px;
+		line-height: 16px;
+		padding: 0 20px;
+	}
+
+	.starwars__head a:after{
+		margin-left: 6px;
+	}
+
+	.starwars__content{
+		flex-wrap: wrap;
+	}
+
+	.starwars__box{
+		margin-bottom: 16px;
+	}
+
+	.starwars__box img {
+		width: 156px;
+		height: 174px;
+	}
+
+}
+

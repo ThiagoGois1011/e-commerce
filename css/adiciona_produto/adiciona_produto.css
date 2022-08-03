@@ -1,0 +1,140 @@
+.adiciona{
+	background: #E5E5E5;
+	display: flex;
+	justify-content: center;
+	padding: 64px 0;
+}
+
+.adiciona__form h2{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #464646;
+}
+
+.adiciona__div{
+	position: relative;
+}
+
+.adiciona__input{
+	width: 559px;
+	height: 56px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	margin-top: 16px;
+	box-sizing: border-box;
+
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #C8C8C8;
+
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #464646;
+	padding-left: 10px;
+}
+
+.adiciona__textarea{
+	width: 559px;
+	height: 82px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	margin-top: 16px;
+	box-sizing: border-box;
+
+	resize: none;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #C8C8C8;
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #464646;
+	padding-left: 10px;
+	padding-top: 1em;
+}
+
+.adiciona__label{
+	padding: 35px 0 0 10px;
+    position: absolute;
+    left: 0;
+    color: #A2A2A2;
+    transform-origin: 0 0;
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.adiciona__input:focus, .adiciona__textarea:focus{
+      border-bottom: 2px solid #2A7AE4;
+}
+
+.adiciona__input:focus + .adiciona__label, .adiciona__input:not(:placeholder-shown)
+ + .adiciona__label, .adiciona__textarea:focus + .adiciona__label, .adiciona__textarea:not(:placeholder-shown)
+ + .adiciona__label{
+  	transform: translateY(-7px) scale(0.7);
+    padding-left: 12px;
+    color: #2A7AE4;
+}
+
+.adiciona__button{
+	padding: 16px;
+	width: 559px;
+	height: 51px;
+	margin-top: 16px;
+	border-color: transparent;
+	background: #2A7AE4;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+
+.adiciona__button:active{
+	background: #1260c7 ;
+}
+
+@media (max-width: 768px){
+
+	.adiciona{
+		padding: 32px;
+	}
+
+	.adiciona__form{
+		width: 100%;
+	}
+
+	.adiciona__form h2{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.adiciona__input{
+		width: 90vw;
+	}
+
+	.adiciona__textarea{
+		width: 90vw;
+	}
+
+	.adiciona__button{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 425px){
+
+	.adiciona{
+		padding: 16px;
+	}
+
+}

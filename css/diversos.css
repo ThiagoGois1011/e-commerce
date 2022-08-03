@@ -1,0 +1,164 @@
+.diversos{
+	padding: 0 152px;
+	margin: 64px 0;
+	box-sizing: border-box;
+}
+
+.diversos a:hover{
+	color: #1260c7;
+	text-decoration: underline;
+}
+
+
+.diversos__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.diversos__head h1{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #464646;
+}
+
+.diversos__head a{
+	font-weight: 700;
+	height: 100%;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+.diversos__head a:after{
+	position: absolute;
+	content: url(../assets/vector.png);
+	margin-left: 12px;
+}
+
+.diversos__content{
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.diversos__box{
+	display: flex;
+	flex-direction: column;	
+}
+
+.diversos__box img{
+	width: 12vw;
+	max-width: 200px;
+}
+
+.diversos__box li:nth-child(2){
+	font-weight: 500;
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+}
+
+.diversos__box li:nth-child(3){
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 8px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.diversos__box li:nth-child(4){
+	margin-top: 8px;
+}
+
+.diversos__box a{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+	.diversos{
+		padding: 0 32px;
+		margin-top: 64px;
+	}
+
+	.diversos__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.diversos__head a{
+		padding: 0 29px;
+	}
+
+	.diversos__head a:after{
+		margin-left: 12px;
+	}
+
+	.diversos__content{
+		flex-wrap: wrap;
+	}
+
+	.diversos__box img {
+		width: 164px;
+		height: 174px;
+	}
+
+	.diversos__box:nth-last-child(1){
+		display: none;
+	}
+
+	.diversos__box:nth-last-child(2){
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 425px){
+
+	.diversos{
+		padding: 0 16px;
+		margin-top: 32px;
+	}
+
+	.diversos__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.diversos__head a{
+		font-size: 14px;
+		line-height: 16px;
+		padding: 0 20px;
+	}
+
+	.diversos__head a:after{
+		margin-left: 6px;
+	}
+
+	.diversos__content{
+		flex-wrap: wrap;
+	}
+
+	.diversos__box{
+		margin-bottom: 16px;
+	}
+
+	.diversos__box img {
+		width: 156px;
+		height: 174px;
+	}
+
+}
+
+
+
+

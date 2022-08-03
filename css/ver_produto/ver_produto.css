@@ -1,0 +1,199 @@
+.produto{
+	background: #E5E5E5;
+	padding: 64px 152px;
+}
+
+.produto__detalhe{
+	display: flex;
+	align-items: center;
+}
+
+.produto__imagem{
+	width: 55%;
+	height: 403px;
+	background: url(../../assets/unsplash_6FDXGY9J6y4.png) no-repeat center;
+	background-size: cover;
+}
+
+.produto__descricao{
+	margin-left: 16px;
+	width: 45%;
+}
+
+.produto__descricao--titulo{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 52px;
+	line-height: 61px;
+	color: #464646;
+}
+
+.produto__descricao--preco{
+	font-family: 'Raleway';
+	font-style: normal;
+	margin: 8px 0;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.produto__descricao--descricao{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.produto__similares{
+	margin-top: 64px;
+}
+
+.produto__similares--titulo{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #464646;
+}
+
+.produto__similares--lista{
+	display: flex;
+	margin-top: 16px;
+}
+
+.produto__box{
+	display: flex;
+	flex-direction: column;	
+	margin-right: .8vw;
+}
+
+.produto__box img{
+	width: 12vw;
+	max-width: 200px;
+}
+
+.produto__box li:nth-child(2){
+	font-weight: 500;
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+}
+
+.produto__box li:nth-child(3){
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 8px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.produto__box li:nth-child(4){
+	margin-top: 8px;
+}
+
+.produto__box a{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+.produto__box a:hover{
+	color: #1260c7;
+	text-decoration: underline;
+}
+
+@media (max-width: 768px){
+
+	.produto{
+		padding: 32px;
+	}
+
+	.produto__imagem{
+		width: 254px;
+		height: 157px;
+	}
+
+	.produto__descricao{
+		width: 56vw;
+	}
+
+	.produto__descricao--titulo{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.produto__descricao--descricao{
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.produto__similares--lista{
+		justify-content: space-between;
+	}
+
+	.produto__similares--titulo{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.produto__box{
+		margin: 0;
+	}
+
+	.produto__box img{
+		width: 164px;
+		height: 174px;
+	}
+
+	.produto__box:nth-last-child(1){
+		display: none;
+	}
+
+	.produto__box:nth-last-child(2){
+		display: none;
+	}
+
+}
+
+@media (max-width: 425px){
+
+	.produto{
+		padding: 0 16px 16px  ;
+	}
+
+	.produto__detalhe{
+		flex-direction: column;
+	}
+
+	.produto__descricao{
+		width: 100%;
+		margin-top: 16px;
+		margin-left: 0;
+	}
+
+	.produto__imagem{
+		width: 100vw;
+		height: 220px;
+	}
+
+	.produto__similares--lista{
+		flex-wrap: wrap;
+	}
+
+	.produto__box{
+		margin-bottom: 16px;
+	}
+
+	.produto__box img{
+		width: 156px;
+	}
+
+}

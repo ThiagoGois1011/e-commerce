@@ -1,0 +1,216 @@
+.informa{
+	background: #EAF2FD;
+	padding: 0 152px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.informa__div{
+	display: flex;
+	justify-content: space-between;
+	margin: 64px 0;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.informa__div--informa{
+	display: flex;
+	align-items: flex-start;
+}
+
+.informa__links{
+	margin-left: 7vw;
+}
+
+.informa__links a{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #464646;
+	text-decoration: none;
+	
+}
+
+.informa__links li{
+	margin-top: 24px;
+}
+
+.informa__links li:first-child{
+	margin-top: 0;
+}
+
+.informa__links a:hover{
+	text-decoration: underline;
+}
+
+.informa__contato{
+	display: flex;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #464646;
+	flex-direction: column;
+	height: 100%;
+}
+
+.informa__titulo{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.informa__nome{
+	position: relative;
+	margin: 8px 0 16px 0;
+}
+
+.informa__mensagem {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.informa__nome input{
+	width: 37vw;
+	max-width: 600px;
+	height: 56px;
+	padding: 0 0 0 10px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	border: none;
+	border-bottom: 2px solid #C8C8C8;
+	outline: none;
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #464646;
+}
+
+.informa__nome label,.informa__mensagem label{
+	padding: 20px 0 0 10px;
+    position: absolute;
+    left: 0;
+    color: #A2A2A2;
+    transform-origin: 0 0;
+    transition: 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+
+.informa__mensagem textarea{
+	width: 37vw;
+	max-width: 600px;
+	height: 82px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	border: none;
+	resize: none;
+	border-bottom: 2px solid #C8C8C8;
+	outline: none;
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #464646;
+	padding: 20px 0 0 10px;
+}
+
+.informa__mensagem input:focus, .informa__nome input:focus{
+      border-bottom: 2px solid #2A7AE4;
+}
+
+.informa__nome input:focus + .label, .informa__nome input:not(:placeholder-shown)
+ + .label, .informa__mensagem textarea:focus + .label, 
+ .informa__mensagem textarea:not(:placeholder-shown) + .label {
+  	transform: translateY(-7px) scale(0.7);
+    padding-left: 12px;
+    color: #2A7AE4;
+}
+
+.informa__botao{
+	padding: 16px 0;
+	background: #2A7AE4;
+	width: 165px;
+	border: none;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+
+.informa__botao:active{
+	background: #1260c7 ;
+}
+
+@media (max-width: 768px){
+
+	.informa{
+		padding: 0 32px;
+	}
+
+	.informa__div{
+		margin: 32px 0;
+	}
+
+	.informa__div--informa{
+		flex-direction: column;
+	}
+
+	.informa__links{
+		margin-left: 0;
+		margin-top: 31px;
+	}
+
+	.informa__nome input{
+		width: 434px
+	}
+
+	.informa__mensagem textarea{
+		width: 434px
+	}
+
+	.informa__botao{
+		padding: 12px 16px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+}
+
+@media (max-width: 425px){
+
+	.informa{
+		padding: 0 16px;
+	}
+	.informa__div{
+		flex-direction: column;
+		align-items: center;
+		margin: 16px 0;
+		
+	}
+
+	.informa__links{
+		text-align: center;
+	}
+
+	.informa__contato{
+		margin-top: 32px;
+	}
+
+	.informa__nome input{
+		width: 90vw
+	}
+
+	.informa__mensagem textarea{
+		width: 90vw
+	}
+
+}

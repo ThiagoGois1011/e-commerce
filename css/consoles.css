@@ -1,0 +1,163 @@
+.consoles{
+	padding: 0 152px;
+	margin-top: 64px;
+	box-sizing: border-box;
+}
+
+.consoles a:hover{
+	color: #1260c7;
+	text-decoration: underline;
+}
+
+.consoles__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.consoles__head h1{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #464646;
+}
+
+.consoles__head a{
+	font-weight: 700;
+	height: 100%;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+.consoles__head a:after{
+	position: absolute;
+	content: url(../assets/vector.png);
+	margin-left: 12px;
+}
+
+.consoles__content{
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.consoles__box{
+	display: flex;
+	flex-direction: column;	
+}
+
+.consoles__box img{
+	width: 12vw;
+	max-width: 200px;
+}
+
+.consoles__box li:nth-child(2){
+	font-weight: 500;
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+}
+
+.consoles__box li:nth-child(3){
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 8px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.consoles__box li:nth-child(4){
+	margin-top: 8px;
+}
+
+.consoles__box a{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+	.consoles{
+		padding: 0 32px;
+		margin-top: 64px;
+	}
+
+	.consoles__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.consoles__head a{
+		padding: 0 29px;
+	}
+
+	.consoles__head a:after{
+		margin-left: 12px;
+	}
+
+	.consoles__content{
+		flex-wrap: wrap;
+	}
+
+	.consoles__box img {
+		width: 164px;
+		height: 174px;
+	}
+
+	.consoles__box:nth-last-child(1){
+		display: none;
+	}
+
+	.consoles__box:nth-last-child(2){
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 425px){
+
+	.consoles{
+		padding: 0 16px;
+		margin-top: 32px;
+	}
+
+	.consoles__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.consoles__head a{
+		font-size: 14px;
+		line-height: 16px;
+		padding: 0 20px;
+	}
+
+	.consoles__head a:after{
+		margin-left: 6px;
+	}
+
+	.consoles__content{
+		flex-wrap: wrap;
+	}
+
+	.consoles__box{
+		margin-bottom: 16px;
+	}
+
+	.consoles__box img {
+		width: 156px;
+		height: 174px;
+	}
+
+}
+
+
+
+

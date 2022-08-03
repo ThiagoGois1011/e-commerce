@@ -1,0 +1,16 @@
+footer{
+	display: flex;
+	padding: 0px 0;
+	height: 102px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.footer__rodape{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #464646;
+}
+

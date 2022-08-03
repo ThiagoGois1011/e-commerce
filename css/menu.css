@@ -1,13 +1,13 @@
 body{
 	font-family: 'Raleway';
 	font-style: normal;
-
 }
+
 .menu{
 	display: flex;
 	padding: 37px 152px;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	box-sizing: border-box;
 }
 
@@ -60,5 +60,72 @@ body{
 	line-height: 16px;
 
 	color: #2A7AE4;
+}
+
+.menu__lupa{
+ 	fill: #A2A2A2;
+}
+
+
+.menu__botao-login:active{
+	background: #D3D3D3;
+
+}
+
+@media (max-width: 768px){
+
+	.menu{
+		padding: 16px 32px;
+	}
+
+	.menu__logo{
+		width: 100px;
+		height: 28px;
+	}
+
+	.menu__div-busca{
+		width: 272px;
+	}
+
+	.menu__botao-login{
+		padding: 12px 16px;
+		height: 40px;
+		width: 166px;
+	}
+
+}
+@media (max-width: 425px){
+
+	.menu{
+		padding: 16px;
+	}
+
+	.menu__pesquisa{
+		display: none;
+	}
+
+	.menu__div-busca{
+		display: inline;
+		background: transparent;
+		order: 2;
+		width: auto;
+		margin-left: 35px;
+		padding: 8px 0;
+	}
+
+	.menu__lupa{
+		
+		fill: #464646;
+	}
+
+	.menu__lupa-sembotao{
+		margin-left: auto;
+		margin-right: 10px;
+	}
+
+	.menu__botao-login{
+		margin-left: 35px;
+
+	}
 
 }
