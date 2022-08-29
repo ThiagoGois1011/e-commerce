@@ -5,7 +5,8 @@ let listaCompletaConsoles = []
 let listaCompletaDiversos = []
 let listaCompletaStarWars = []
 
-alert("siga as instruções do readme, é necessario usar json-server para que funcione corretamente!!!")
+alert("siga as instruções do readme")
+alert("é necessario usar json-server para que funcione corretamente!!!")
 
 const carregaBox = (section, name, price,imageURL, id, tamanho, alt) => {
     const starWars = document.querySelector(".starwars__content")
