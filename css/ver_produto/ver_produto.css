@@ -11,8 +11,6 @@
 .produto__imagem{
 	width: 55%;
 	height: 403px;
-	background: url(../../assets/unsplash_6FDXGY9J6y4.png) no-repeat center;
-	background-size: cover;
 }
 
 .produto__descricao{

@@ -32,7 +32,7 @@
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 19px;
 	line-height: 20px;
 	color: #464646;
 	padding-left: 10px;
@@ -54,7 +54,7 @@
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 19px;
 	line-height: 20px;
 	color: #464646;
 	padding-left: 10px;
@@ -100,6 +100,29 @@
 
 .adiciona__button:active{
 	background: #1260c7 ;
+}
+
+.input_invalido .adiciona__label{
+    color: #df2525;
+}
+
+.input_invalido .adiciona__textarea{
+    border: 1px solid #df2525;
+}
+
+.input_invalido .adiciona__input{
+    border: 1px solid #df2525;
+}
+
+.informa__contato_erro{
+    display: none;   
+}
+
+.input_invalido .informa__contato_erro{
+	display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    color: #df2525;
 }
 
 @media (max-width: 768px){

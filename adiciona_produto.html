@@ -33,36 +33,43 @@
 					<a href=".\galeria.html"><button class="menu__botao-login" id="botaoLogin">Menu administrador</button></a>
 				</span>
 			</section>
+			<input class="menu__pesquisa_phone" id="pesquisa" type="text" placeholder="o que deseja encontrar?">
 		</header>
 		<main>
 			<section class="adiciona">
 				<form class="adiciona__form">
 					<h2>Adicionar novo produto</h2>
 					<div class="adiciona__div">
-						<input type="text" class="adiciona__input" id="url__imagem" placeholder=" " required>
+						<input type="text" class="adiciona__input" id="url__imagem" placeholder=" " data-tipo="url" required>
 						<label class="adiciona__label" for="url__imagem">URL da imagem</label>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
 					<div class="adiciona__div">
-						<input type="text" class="adiciona__input" id="categoria" placeholder=" " required>
+						<input type="text" class="adiciona__input" id="categoria" placeholder=" " data-tipo="categoria" required>
 						<label class="adiciona__label" for="categoria">Categoria</label>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
 					<div class="adiciona__div">
-						<input type="text" class="adiciona__input" id="nome__produto" placeholder=" " required>
+						<input type="text" class="adiciona__input" id="nome__produto" placeholder=" " data-tipo="nome_produto" required>
 						<label class="adiciona__label" for="nome__produto">Nome do produto</label>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
 					<div class="adiciona__div">
-						<input type="text" class="adiciona__input" id="preco" placeholder=" " required>
+						<input type="text" class="adiciona__input" id="preco" placeholder=" " data-tipo="preco" pattern="(\d+)?([.]?)\d+(,[0-9][0-9])" required>
 						<label class="adiciona__label" for="preco">Preço do produto</label>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
 
 					<div class="adiciona__div">
-						<textarea type="text" class="adiciona__textarea" id="descricao" placeholder=" " required></textarea> 
+						<textarea type="text" class="adiciona__textarea" id="descricao" placeholder=" " data-tipo="descricao" required></textarea> 
 						<label class="adiciona__label" for="descricao">Descrição do produto</label>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
-					<button class="adiciona__button">Adicionar produto</button>
+					<input type="submit" value="Adicionar produto" class="adiciona__button">
 				</form>
 			</section>
-
+		</main>
+		<footer>
 			<section class="informa">
 				<div class="informa__div">
 					<div class="informa__div--informa">
@@ -79,25 +86,26 @@
 					<form class="informa__contato">
 						<h3 class="informa__titulo">Fale conosco</h3>
 						<div class="informa__nome">
-							<input type="text" id="nome" placeholder=" " required>
+							<input type="text" id="nome" placeholder=" " data-tipo="nome" required >
 							<label for="nome" class="label">Nome</label>
+							<span class="informa__contato_erro">Campo não está valido</span>
 						</div>
 						<div class="informa__mensagem">
-							<textarea type="text" id="mensagem" placeholder=" " required></textarea>
+							<textarea type="text" id="mensagem" placeholder=" " data-tipo="mensagem" required></textarea>
 							<label for="mensagem" class="label">Escreva sua Mensagem</label>
+							<span class="informa__contato_erro">Campo não está valido</span>
 						</div>
 						<button class="informa__botao">Enviar mensagem</button>
 					</form>
 				</div>
-				
 			</section>
-		</main>
-		<footer>
 			<div class="footer__rodape">
                 <p>Desenvolvido por Thiago Gois</p>
                 <p>2022</p>
             </div>
 		</footer>
-
+		<script src=".\js\validacao.js" type="module"></script>
+		,<script src=".\js\controler\adicionaProduto.js" type="module"></script>
+		<script src=".\js\pesquisaProduto.js" type="module"></script>
 	</body>
 </html>

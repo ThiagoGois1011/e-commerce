@@ -39,6 +39,10 @@ body{
 	line-height: 16px;
 }
 
+.menu__pesquisa_phone{
+	display: none;
+}
+
 .menu__span{
 	display: flex;
 	flex-grow: 1;
@@ -72,6 +76,101 @@ body{
 
 }
 
+#invisivel{
+	display: none;
+}
+
+.filtrados{
+	background: rgb(236, 236, 236);
+	padding: 70.5px 152px 64px;
+}
+
+.filtrados__head{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.filtrados__head h1{
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	color: #464646;
+}
+
+.filtrados__content{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 23px;
+}
+
+.filtrados__box{
+	display: flex;
+	width: 12vw;
+	margin-right: .8vw;
+	margin-bottom: 64px;
+	flex-direction: column;
+}
+
+.filtrados__box:nth-child(6n){
+	margin-right: 0;
+}
+
+.filtrados__box li:nth-child(1){
+	position: relative;
+	width: 12vw;
+	max-width: 200px;
+}
+
+.filtrados__box img{
+	width: 12vw;
+	height: 174px;
+	max-width: 200px;
+}
+
+.filtrados__box li:nth-child(2){
+	white-space: normal;
+	font-weight: 500;
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+}
+
+.filtrados__box li:nth-child(3){
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 8px;
+	line-height: 19px;
+	color: #464646;
+}
+
+.filtrados__box li:nth-child(4){
+	margin-top: 8px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #464646;
+}
+
+.filtrados__box a{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #2A7AE4;
+	text-decoration: none;
+}
+
+.filtrados__box a:hover{
+	color: #1260c7;
+	text-decoration: underline;
+}
+
 @media (max-width: 768px){
 
 	.menu{
@@ -92,6 +191,39 @@ body{
 		height: 40px;
 		width: 166px;
 	}
+
+	.filtrados{
+		padding: 32px;
+	}
+
+	.filtrados__head{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.filtrados__head h1{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.filtrados__box{
+		width: 164px;
+		margin-right: 1.5vw;
+	}
+
+	.filtrados__box li:nth-child(1){
+		width: 164px ;
+	}
+
+	.filtrados__box img{
+		width: 164px ;
+		height: 174px ;
+	}
+
+	.filtrados__box:nth-child(6n){
+		margin-right: 1.5vw;
+	}
+
 
 }
 @media (max-width: 425px){
@@ -126,6 +258,31 @@ body{
 	.menu__botao-login{
 		margin-left: 35px;
 
+	}
+
+	.menu__pesquisa_phone{
+		display: block;
+		border-radius: 20px;
+		width: 100vw;
+		height: 0;
+		box-sizing: border-box;
+		background: #F5F5F5;
+		border:none;
+		outline: 0;
+		transition: .7s all;
+		visibility: hidden;
+	
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.pesquisaativa{
+		display: block;
+		visibility: visible;
+		height: 50px;
 	}
 
 }

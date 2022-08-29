@@ -30,116 +30,59 @@
 					</svg>
 				</div>
 			</section>
+			<input class="menu__pesquisa_phone" id="pesquisa" type="text" placeholder="o que deseja encontrar?">
 		</header>
 		<main>
 			<section class="produto">
 				<div class="produto__detalhe">
-					<div class="produto__imagem">
-					</div>
-					<div class="produto__descricao">
-						<p class="produto__descricao--titulo">Produto XYZ</p>
-						<p class="produto__descricao--preco">R$ 60,00</p>
-						<p class="produto__descricao--descricao">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>	
-					</div>
 				</div>
 				<div class="produto__similares">
 					<div>
 						<p class="produto__similares--titulo">Produtos similares</p>
 					</div>
 					<div class="produto__similares--lista">
-						<div class="produto__box">
-						<ul class="produto__ul">
-							<li><img alt="Produto XYZ" src=".\assets\unsplash_0POwK6iAiRQ.png"></li>
-							<li>Produto XYZ</li>
-							<li>R$ 60,00</li>
-							<li><a href="#">Ver produto</a></li>
-						</ul>
-						
-					</div>
-					<div class="produto__box">
-						<ul class="produto__ul">
-							<li><img alt="Produto XYZ" src=".\assets\unsplash_epRFE_hBNjo.png"></li>
-							<li>Produto XYZ</li>
-							<li>R$ 60,00</li>
-							<li><a href="#">Ver produto</a></li>
-						</ul>
-						
-					</div>
-					<div class="produto__box">
-						<ul class="produto__ul">
-							<li><img alt="Produto XYZ" src=".\assets\unsplash_KeGToDVN0l4.png"></li>
-							<li>Produto XYZ</li>
-							<li>R$ 60,00</li>
-							<li><a href="#">Ver produto</a></li>
-						</ul>
-						
-					</div>
-					<div class="produto__box">
-						<ul class="produto__ul">
-							<li><img alt="Produto XYZ" src=".\assets\unsplash_4OHkK555s1A.png"></li>
-							<li>Produto XYZ</li>
-							<li>R$ 60,00</li>
-							<li><a href="#">Ver produto</a></li>
-						</ul>
-						
-					</div>
-					<div class="produto__box">
-						<ul class="produto__ul">
-							<li><img alt="Produto XYZ" src=".\assets\unsplash_R8L1l9RN198.png"></li>
-							<li>Produto XYZ</li>
-							<li>R$ 60,00</li>
-							<li><a href="#">Ver produto</a></li>
-						</ul>
-						
-					</div>
-					<div class="produto__box">
-						<ul class="produto__ul">
-							<li><img alt="Produto XYZ" src=".\assets\unsplash_1VV1MRafd7A.png"></li>
-							<li>Produto XYZ</li>
-							<li>R$ 60,00</li>
-							<li><a href="#">Ver produto</a></li>
-						</ul>
-						
-					</div>
-					
 					</div>	
 				</div>
 			</section>
-			<section class="informa">
-				<div class="informa__div">
-					<div class="informa__div--informa">
-						<img src=".\assets\logo.png" alt="logo da Alura geek">
-						<ul class="informa__links">
-							<li><a href="#">Quem somos nós</a></li>
-							<li><a href="#">Política de privacidade</a></li>
-							<li><a href="#">Programa fidelidade</a></li>
-							<li><a href="#">Nossas lojas</a></li>
-							<li><a href="#">Quero ser franqueado</a></li>
-							<li><a href="#">Anuncie aqui</a></li>
-						</ul>
+			</main>
+			<footer>
+				<section class="informa">
+					<div class="informa__div">
+						<div class="informa__div--informa">
+							<img src=".\assets\logo.png" alt="logo da Alura geek">
+							<ul class="informa__links">
+								<li><a href="#">Quem somos nós</a></li>
+								<li><a href="#">Política de privacidade</a></li>
+								<li><a href="#">Programa fidelidade</a></li>
+								<li><a href="#">Nossas lojas</a></li>
+								<li><a href="#">Quero ser franqueado</a></li>
+								<li><a href="#">Anuncie aqui</a></li>
+							</ul>
+						</div>
+						<form class="informa__contato">
+							<h3 class="informa__titulo">Fale conosco</h3>
+							<div class="informa__nome">
+								<input type="text" id="nome" placeholder=" " data-tipo="nome" required >
+								<label for="nome" class="label">Nome</label>
+								<span class="informa__contato_erro">Campo não está valido</span>
+							</div>
+							<div class="informa__mensagem">
+								<textarea type="text" id="mensagem" placeholder=" " data-tipo="mensagem" required></textarea>
+								<label for="mensagem" class="label">Escreva sua Mensagem</label>
+								<span class="informa__contato_erro">Campo não está valido</span>
+							</div>
+							<button class="informa__botao">Enviar mensagem</button>
+						</form>
 					</div>
-					<form class="informa__contato">
-						<h3 class="informa__titulo">Fale conosco</h3>
-						<div class="informa__nome">
-							<input type="text" id="nome" placeholder=" " required>
-							<label for="nome" class="label">Nome</label>
-						</div>
-						<div class="informa__mensagem">
-							<textarea type="text" id="mensagem" placeholder=" " required></textarea>
-							<label for="mensagem" class="label">Escreva sua Mensagem</label>
-						</div>
-						<button class="informa__botao">Enviar mensagem</button>
-					</form>
+				</section>
+				<div class="footer__rodape">
+					<p>Desenvolvido por Thiago Gois</p>
+					<p>2022</p>
 				</div>
-				
-			</section>
-		</main>
-		<footer>
-			<div class="footer__rodape">
-                <p>Desenvolvido por Thiago Gois</p>
-                <p>2022</p>
-            </div>
-		</footer>
-
+			</footer>
+		<script src=".\js\validacao.js" type="module"></script>
+		<script src=".\js\ver_produto.js" type="module"></script>
+		<script src=".\js\pesquisaProduto.js" type="module"></script>
+		
 	</body>
 </html>

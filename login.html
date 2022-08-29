@@ -31,6 +31,7 @@
 					
 				</div>
 			</section>
+			<input class="menu__pesquisa_phone" id="pesquisa" type="text" placeholder="o que deseja encontrar?">
 		</header>
 		<main>
 			<section class="login">
@@ -38,54 +39,57 @@
 					<div class="login__geral">
 					<h2>Iniciar Sessão</h2>
 					<div class="login__caixa">
-						<input class="login__input" type="email" id="email" placeholder=" " required>
+						<input class="login__input" type="email" id="email" placeholder=" " data-tipo="email" required>
 						<label class="login__label" for="email">Escreva o seu email</label>
-						<span class="erro"></span>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
 					<div class="login__caixa">
-						<input class="login__input" type="password" id="senha" placeholder=" " required>
+						<input class="login__input" type="password" id="senha" placeholder=" " data-tipo="senha" required>
 						<label class="login__label" for="senha">Escreva a sua senha </label>
+						<span class="informa__contato_erro">Campo não está valido</span>
 					</div>
-					<button class="login__button">Entrar</button>
+					<input class="login__button" type="submit" value="Entrar">
 					</div>
 				</form>				
 			</section>
-			<section class="informa">
-				<div class="informa__div">
-					<div class="informa__div--informa">
-						<img src=".\assets\logo.png" alt="logo da Alura geek">
-						<ul class="informa__links">
-							<li><a href="#">Quem somos nós</a></li>
-							<li><a href="#">Política de privacidade</a></li>
-							<li><a href="#">Programa fidelidade</a></li>
-							<li><a href="#">Nossas lojas</a></li>
-							<li><a href="#">Quero ser franqueado</a></li>
-							<li><a href="#">Anuncie aqui</a></li>
-						</ul>
-					</div>
-					<form class="informa__contato">
-						<h3 class="informa__titulo">Fale conosco</h3>
-						<div class="informa__nome">
-							<input type="text" id="nome" placeholder=" " required>
-							<label for="nome" class="label">Nome</label>
-						</div>
-						<div class="informa__mensagem">
-							<textarea type="text" id="mensagem" placeholder=" " required></textarea>
-							<label for="mensagem" class="label">Escreva sua Mensagem</label>
-						</div>
-						<button class="informa__botao">Enviar mensagem</button>
-					</form>
-				</div>
-				
-			</section>
-
 		</main>
-		<footer>
-			<div class="footer__rodape">
-                <p>Desenvolvido por Thiago Gois</p>
-                <p>2022</p>
-            </div>
-		</footer>
-
+			<footer>
+				<section class="informa">
+					<div class="informa__div">
+						<div class="informa__div--informa">
+							<img src=".\assets\logo.png" alt="logo da Alura geek">
+							<ul class="informa__links">
+								<li><a href="#">Quem somos nós</a></li>
+								<li><a href="#">Política de privacidade</a></li>
+								<li><a href="#">Programa fidelidade</a></li>
+								<li><a href="#">Nossas lojas</a></li>
+								<li><a href="#">Quero ser franqueado</a></li>
+								<li><a href="#">Anuncie aqui</a></li>
+							</ul>
+						</div>
+						<form class="informa__contato">
+							<h3 class="informa__titulo">Fale conosco</h3>
+							<div class="informa__nome">
+								<input type="text" id="nome" placeholder=" " data-tipo="nome" required >
+								<label for="nome" class="label">Nome</label>
+								<span class="informa__contato_erro">Campo não está valido</span>
+							</div>
+							<div class="informa__mensagem">
+								<textarea type="text" id="mensagem" placeholder=" " data-tipo="mensagem" required></textarea>
+								<label for="mensagem" class="label">Escreva sua Mensagem</label>
+								<span class="informa__contato_erro">Campo não está valido</span>
+							</div>
+							<button class="informa__botao">Enviar mensagem</button>
+						</form>
+					</div>
+				</section>
+				<div class="footer__rodape">
+					<p>Desenvolvido por Thiago Gois</p>
+					<p>2022</p>
+				</div>
+			</footer>
+		<script src=".\js\validacao.js" type="module"></script>
+		<script src=".\js\botaoLogin.js"></script>
+		<script src=".\js\pesquisaProduto.js" type="module"></script>
 	</body>
 </html>

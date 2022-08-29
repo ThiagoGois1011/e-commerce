@@ -13,11 +13,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	text-align: center;
+	
 }
 
 .login__geral h2{
 	font-family: 'Raleway';
+	text-align: center;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
@@ -55,6 +56,7 @@
 .login__label{
 	padding: 50px 0 0 10px;
     position: absolute;
+	top: 0;
     left: 0;
     color: #A2A2A2;
     transform-origin: 0 0;
@@ -86,6 +88,35 @@
 	line-height: 21px;
 	color: #FFFFFF;
 }
+
+.login__button:active{
+	background: #1260c7 ;
+}
+
+.input_invalido .login__label{
+    color: #df2525;
+}
+
+.input_invalido #email{
+    border: 1px solid #df2525;
+}
+
+.input_invalido #senha{
+    border: 1px solid #df2525;
+}
+
+.informa__contato_erro{
+    display: none;   
+}
+
+.input_invalido .informa__contato_erro{
+	display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    color: #df2525;
+}
+
+
 
 @media (max-width: 768px){
 

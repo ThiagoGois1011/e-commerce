@@ -61,13 +61,17 @@
 }
 
 .informa__nome{
+	display: flex;
 	position: relative;
+	flex-direction: column;
 	margin: 8px 0 16px 0;
 }
 
 .informa__mensagem {
+	display: flex;
 	position: relative;
 	margin-bottom: 8px;
+	flex-direction: column;
 }
 
 .informa__nome input{
@@ -92,6 +96,7 @@
 .informa__nome label,.informa__mensagem label{
 	padding: 20px 0 0 10px;
     position: absolute;
+	top: 0;
     left: 0;
     color: #A2A2A2;
     transform-origin: 0 0;
@@ -147,6 +152,29 @@
 
 .informa__botao:active{
 	background: #1260c7 ;
+}
+
+.input_invalido .label{
+    color: #df2525;
+}
+
+.input_invalido #mensagem{
+    border: 1px solid #df2525;
+}
+
+.input_invalido #nome{
+    border: 1px solid #df2525;
+}
+
+.informa__contato_erro{
+    display: none;   
+}
+
+.input_invalido .informa__contato_erro{
+	display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    color: #df2525;
 }
 
 @media (max-width: 768px){
