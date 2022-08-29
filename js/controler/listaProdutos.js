@@ -5,6 +5,8 @@ let listaCompletaConsoles = []
 let listaCompletaDiversos = []
 let listaCompletaStarWars = []
 
+alert("siga as instruções do readme")
+
 const carregaBox = (section, name, price,imageURL, id, tamanho, alt) => {
     const starWars = document.querySelector(".starwars__content")
     const consoles = document.querySelector(".consoles__content")
