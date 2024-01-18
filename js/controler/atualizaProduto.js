@@ -21,7 +21,7 @@ const carrega = async () => {
     }
 }
 
-carrega()
+//carrega()
   
     
    
