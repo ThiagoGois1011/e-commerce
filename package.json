@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThiagoGois1011/e-commerce/issues"
   },
-  "homepage": "https://github.com/ThiagoGois1011/e-commerce#readme"
+  "homepage": "https://github.com/ThiagoGois1011/e-commerce#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.21"
+  }
 }

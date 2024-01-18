@@ -43,18 +43,18 @@
 	justify-content: space-between;
 }
 
-.starwars__box{
+.box{
 	display: flex;
 	flex-direction: column;	
 }
 
-.starwars__box img{
+.box img{
 	width: 12vw;
 	height: 174px;
 	max-width: 200px;
 }
 
-.starwars__box li:nth-child(2){
+.box li:nth-child(2){
 	font-weight: 500;
 	margin-top: 8px;
 	font-size: 14px;
@@ -62,7 +62,7 @@
 	color: #464646;
 }
 
-.starwars__box li:nth-child(3){
+.box li:nth-child(3){
 	font-weight: 700;
 	font-size: 16px;
 	margin-top: 8px;
@@ -70,11 +70,11 @@
 	color: #464646;
 }
 
-.starwars__box li:nth-child(4){
+.box li:nth-child(4){
 	margin-top: 8px;
 }
 
-.starwars__box a{
+.box a{
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;

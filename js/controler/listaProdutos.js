@@ -22,7 +22,7 @@ const carregaBox = (section, name, price,imageURL, id, tamanho, alt) => {
     </ul>`
 
     const box = document.createElement("div")
-    const classBox = `${section}__box`
+    const classBox = `box`
     box.setAttribute("class", classBox)
     box.innerHTML = conteudo
     const categoria = section
@@ -38,16 +38,19 @@ const carregaBox = (section, name, price,imageURL, id, tamanho, alt) => {
         const valor = sorteiaBox(listaCompletaStarWars.length)
         const valor1 = sorteiaBox(listaCompletaConsoles.length)
         const valor2 = sorteiaBox(listaCompletaDiversos.length)
+        console.log(listaCompletaStarWars.length);
+        console.log(listaCompletaConsoles.length);
+        console.log(listaCompletaDiversos.length);
         
-        for(let i= 0; i < valor.length; i++){
+        for(let i= 0; i < listaCompletaStarWars.length; i++){
             let boxEscolhida = listaCompletaStarWars[valor[i]]
             starWars.appendChild(boxEscolhida)       
         }
-        for(let i= 0; i < valor1.length; i++){
+        for(let i= 0; i < listaCompletaConsoles.length; i++){
             let boxEscolhida = listaCompletaConsoles[valor1[i]]
             consoles.appendChild(boxEscolhida)       
         }
-        for(let i= 0; i < valor2.length; i++){
+        for(let i= 0; i < listaCompletaDiversos.length; i++){
             let boxEscolhida = listaCompletaDiversos[valor2[i]]
             diversos.appendChild(boxEscolhida)       
         }

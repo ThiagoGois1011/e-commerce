@@ -68,7 +68,6 @@ const carrega = async () => {
         const dados = await serverProdutos.detalhaProduto(id)
         divCarrega(dados.imageURL, dados.name, dados.price, dados.description, dados.alt)
 
-        
         const dados2 = await serverProdutos.Produtos()
         dados2.forEach(element => {
             boxs(element.imageURL, element.name, element.price, element.id, element.alt, dados2.length, element.section, dados.section)
