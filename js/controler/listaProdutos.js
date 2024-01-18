@@ -62,7 +62,7 @@ const carregaBox = (section, name, price,imageURL, id, tamanho, alt) => {
 
 const sorteiaBox = (list) => {
     let numerosSorteados = []
-    while(numerosSorteados.length < 6){
+    while(numerosSorteados.length < list){
         const numero = Math.floor(Math.random() * list)
         if(numerosSorteados.indexOf(numero) == -1){
             numerosSorteados.push(numero)
