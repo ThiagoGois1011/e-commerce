@@ -11,7 +11,9 @@ Alura Geek foi um projeto no estilo e-commerce, criado para ser uma loja do tipo
 1. HTML
 2. CSS
 3. JavaScript
-4. CRUD
+4. Json-Server
+5. Fetch API
+6. CRUD
 
 ## Projeto🏎️
 
